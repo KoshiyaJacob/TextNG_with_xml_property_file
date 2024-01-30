@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods">
+    <parameter name="URL" value="http://horse.industryconnect.io/Account/Login?ReturnUrl=%2f">
+
+    </parameter>
+    <test verbose="2" preserve-order="true" name="Automation Practice Java" thread-count="3">
+
+        <classes>
+            <class name="Test_Package.TestClass">
+                <methods>
+                    <exclude name="Create_TM_Record"/>
+                    <include name="Edit_Time_Record"/>
+                    <exclude name="Delete_Time_Record">
+                    </exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

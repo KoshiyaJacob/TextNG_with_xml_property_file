@@ -42,7 +42,7 @@ public class Time_Material_Class {
 
 
         WebElement saveButton = driver.findElement(By.id("SaveButton"));
-        saveButton.submit();
+        saveButton.click();
         System.out.println("Time and Materials created and submitted");
 
 
